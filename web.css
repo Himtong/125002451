@@ -38,6 +38,8 @@ header {
 }
 
 .logo {
+    gap: 20px;
+    display: flex;
     font-size: 22px;
     font-weight: bold;
 }
