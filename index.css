@@ -89,6 +89,9 @@ button,
 }
 #nut_theme:checked ~ .theme-nut .sunmode {display: inline;}
 #nut_theme:checked ~ .theme-nut .nightmode{display: none;}
+.doi-theme input{
+    display: none;
+}
 .banner {
     min-height: 280px;
     padding: 60px 8%;
