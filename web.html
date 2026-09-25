@@ -1,10 +1,162 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="">
-        <title>TOUR DU LỊCH</title>
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="web.css">
+    <title>CÔNG NGHỆ LÙN</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+
+        </div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#laptop">Laptop</a>
+            <a href="#phukien">Phụ kiện</a>
+            <a href="#khuyenmai">Khuyến mãi</a>
+            <a href="#lienhe">Liên hệ</a>
+        </nav>
+        <div>
+            <input type="checkbox" id="nut-theme">
+            <label for="nut-theme" class="theme-nut">
+                <span class="sunmode">LIGHT</span>
+                <span class="nightmode">DARK</span>
+            </label>
+        </div>
+    </header>
+    <main>
+            <section id="sanpham">
+        <h2 class="title">Sản phẩm nổi bật</h2>
+
+        <div class="products" id="laptop">
+
+            <article class="product">
+                <img src="asusvivo15.png" alt="ASUS Vivobook">
+                <h3>ASUS Vivobook 15</h3>
+                <p class="price">20.990.000đ</p>
+                <p>CLaptop ASUS Vivobook 15 X1504VA-BQ165W (Core 5-120U/ 8GB/ 512GB/ 15" FHD IPS)</p>
+                <button>Thêm vào giỏ</button>
+            </article>
+
+            <article class="product">
+                <img src="dell.png" alt="Dell Inspiron">
+                <h3>Laptop Dell 15</h3>
+                <p class="price">25.390.000đ</p>
+                <p>Laptop Dell 15 DC15250 - 71092480 (I7-1355U/ 16GB/ 512GB/ Win 11/ Office/ Microsoft 365)</p>
+                <button>Thêm vào giỏ</button>
+            </article>
+
+            <article class="product">
+                <img src="levono.png" alt="Lenovo IdeaPad">
+                <h3>Laptop Lenovo IdeaPad Slim</h3>
+                <p class="price">24.990.000đ</p>
+                <p>Laptop Lenovo IdeaPad Slim 3 14IWC11 83RQ00DBVN (Core 3-304/ 8GB/ 512GB/ 14" WUXGA/ Win 11)</p>
+                <button>Thêm vào giỏ</button>
+            </article>
+
+            <article class="product">
+                <img src="chuot.png" alt="Chuột Logitech">
+                <h3>Chuột Logitech G502 Hero Gaming</h3>
+                <p class="price">920.000đ</p>
+                <p>Chuột Logitech G502 Hero Gaming (Có dây USB/100 - 25600 DPI/Quang học HERO)</p>
+                <button>Thêm vào giỏ</button>
+            </article>
+
+            <article class="product" id="phukien">
+                <img src="banphim.png" alt="Bàn phím cơ">
+                <h3>Bàn phím cơ AKKO</h3>
+                <p class="price">3.290.000đ</p>
+                <p>Bàn phím cơ AKKO MOD 007B HE PC Joy of Life</p>
+                <button>Thêm vào giỏ</button>
+            </article>
+
+            <article class="product">
+                <img src="tainghe.png" alt="Tai nghe">
+                <h3>Tai nghe Rapoo Gaming VH520</h3>
+                <p class="price">400.000đ</p>
+                <p>ai nghe Rapoo Gaming VH520(Over-ear/ PC|Laptop / Có led)</p>
+                <button>Thêm vào giỏ</button>
+            </article>
+
+        </div>
+    </section>
+
+        <section class="banner" id="khuyenmai">
+            <div>
+                <h1>TECHSTORE</h1>
+                <h2>Giảm đến 30% Laptop & Phụ kiện</h2>
+                <p>Sản phẩm chính hãng - Giá tốt - Bảo hành uy tín</p>
+                <a href="#sanpham" class="buy">Mua ngay</a>
+            </div>
+        </section>
+        <fieldset>
+            <section class="order">
+                <h2 class="title">Đặt hàng</h2>
+
+                <form>
+                    <label>Họ và tên</label>
+                    <input type="text" required>
+
+                    <label>Email</label>
+                    <input type="email" required>
+
+                    <label>Điện thoại</label>
+                    <input type="tel" required>
+
+                    <label>Địa chỉ giao hàng</label>
+                    <input type="text" required>
+
+                    <label>Ngày muốn nhận</label>
+                    <input type="date" required>
+
+                    <label>Hình thức thanh toán</label>
+                    <div class="radio">
+                        <label><input type="radio" name="pay" required> Tiền mặt</label>
+                        <label><input type="radio" name="pay"> Chuyển khoản</label>
+                        <label><input type="radio" name="pay"> Trả góp</label>
+                    </div>
+
+                    <label>Sản phẩm đặt mua</label>
+                    <select required>
+                        <option value="">-- Chọn sản phẩm --</option>
+                        <option>ASUS Vivobook 15</option>
+                        <option>Dell Inspiron 15</option>
+                        <option>Lenovo IdeaPad 5</option>
+                        <option>Chuột Logitech G102</option>
+                        <option>Bàn phím cơ AKKO</option>
+                        <option>Tai nghe Gaming Havit</option>
+                    </select>
+
+                    <label>Dịch vụ kèm theo</label>
+                    <div class="check">
+                        <label><input type="checkbox"> Giao hàng nhanh</label>
+                        <label><input type="checkbox"> Cài Windows</label>
+                        <label><input type="checkbox"> Bảo hành mở rộng</label>
+                    </div>
+
+                    <label>Ghi chú giao hàng</label>
+                    <textarea rows="4"></textarea>
+
+                    <div class="form-btn">
+                        <button type="submit">Đặt hàng</button>
+                        <button type="reset">Nhập lại</button>
+                    </div>
+                </form>
+            </section>
+
+        </fieldset>
+
+    </main>
+
+    <footer>
+        <p>📍 123 Nguyễn Văn A, TP. Hồ Chí Minh</p>
+        <p>🛡 Chính sách bảo hành: 12 - 24 tháng</p>
+        <p>☎ Hotline: 0909 123 456</p>
+        <p>© 2026 TECHSTORE. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
