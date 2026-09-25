@@ -164,7 +164,7 @@ section {
 }
 
 .product button,
-.form-btn button:first-child {
+.form-nut button:first-child {
     background: #1976d2;
     color: white;
     margin-top: 10px;
@@ -214,13 +214,13 @@ textarea {
     font-weight: normal;
 }
 
-.form-btn {
+.form-nut {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
 
-.form-btn button:last-child {
+.form-nut button:last-child {
     background: #777;
     color: white;
 }
@@ -297,11 +297,11 @@ footer {
         gap: 7px;
     }
 
-    .form-btn {
+    .form-nut {
         flex-direction: column;
     }
 
-    .form-btn button {
+    .form-nut button {
         width: 100%;
     }
 }
