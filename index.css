@@ -22,6 +22,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     line-height: 1.5;
+    transition: 1s;
 }
 body:has(#nut-theme:checked){
     --bg-color:black;
@@ -87,8 +88,8 @@ button,
 .nightmode{
     display: inline;
 }
-#nut_theme:checked ~ .theme-nut .sunmode {display: inline;}
-#nut_theme:checked ~ .theme-nut .nightmode{display: none;}
+#nut-theme:checked ~ .theme-nut .sunmode {display: inline;}
+#nut-theme:checked ~ .theme-nut .nightmode{display: none;}
 .doi-theme input{
     display: none;
 }
